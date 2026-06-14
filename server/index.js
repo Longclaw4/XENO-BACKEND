@@ -502,7 +502,7 @@ async function dispatchCampaign(brand, campaignId, communicationsList, channel) 
           recipient,
           message: comm.messageBody,
           channel,
-          callbackUrl: `http://localhost:3000/api/receipt`
+          callbackUrl: `http://localhost:${process.env.PORT || 3000}/api/receipt`
         });
       } catch (error) {
         // If Channel Service is down, mark as FAILED in CRM
