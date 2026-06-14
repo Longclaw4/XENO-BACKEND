@@ -4,8 +4,10 @@
   "description": "Backend engine for Xeno multi-tenant CRM",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "node server/index.js"
+    "start": "node start-all.js",
+    "dev": "node start-all.js",
+    "crm": "node server/index.js",
+    "channel": "node channel-service/index.js"
   },
   "dependencies": {
     "axios": "^1.6.8",
